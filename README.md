@@ -4,21 +4,21 @@
 
 在此给出完整的编译方法：
 
-> git clone https://github.com/Ullaakut/cameradar.git
-> cd cameradar
-> wget https://curl.se/download/curl-7.63.0.zip
-> unzip curl-7.63.0.zip -d curl
-> mkdir curl
-> unzip curl-7.63.0.zip -d curl/
-> cd curl
-> cd curl-7.63.0
-> configure --prefix=/root/Desktop/tools/cameradar/curl
-> ./configure --prefix=/root/Desktop/tools/cameradar/curl
-> make
-> make install
-> export PKG_CONFIG_PATH=/root/Desktop/tools/cameradar/curl/lib/pkgconfig:$PKG_CONFIG_PATH
-> pkg-config --modversion libcurl
-> cd ../../cmd/cameradar
-> go build .
+> git clone https://github.com/Ullaakut/cameradar.git  
+> cd cameradar  
+> wget https://curl.se/download/curl-7.63.0.zip  
+> unzip curl-7.63.0.zip -d curl  
+> mkdir curl  
+> unzip curl-7.63.0.zip -d curl/  
+> cd curl  
+> cd curl-7.63.0  
+> configure --prefix=/root/Desktop/tools/cameradar/curl  
+> ./configure --prefix=/root/Desktop/tools/cameradar/curl  
+> make  
+> make install  
+> export PKG_CONFIG_PATH=/root/Desktop/tools/cameradar/curl/lib/pkgconfig:$PKG_CONFIG_PATH  
+> pkg-config --modversion libcurl  
+> cd ../../cmd/cameradar  
+> go build .  
 
 最后生成的cameradar就可以使用了
